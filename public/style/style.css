@@ -1,0 +1,57 @@
+#maincard{
+background-color: rgb(218, 52, 182);
+margin: 5px;
+padding: 20px;
+}
+
+#homecontainer{
+
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    flex-wrap: wrap;
+
+}
+
+#resultmain{
+    background-color: rgb(218, 52, 182);
+    margin: 5px;
+    padding: 20px;
+}
+
+#detailsmain{
+    background-color: rgb(218, 52, 182);
+    margin: 5px;
+    padding: 20px;
+
+}
+
+#detailscontainer{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    flex-wrap: wrap;
+}
+
+#listcontainer{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    flex-wrap: wrap; 
+}
+
+#detailscard{
+
+    background-color: rgb(218, 52, 182);
+    margin: 5px;
+    padding: 20px;
+
+}
+
+#detailscontainer{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    flex-wrap: wrap; 
+}
+

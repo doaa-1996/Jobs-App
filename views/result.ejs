@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="/">Home</a>
+        <a href="/searchpage">Search</a>
+        <a href="/list">List</a>
+    </header>
+    <main id="resultmain">
+        <%searchresult.forEach(item=>{%>
+            <h1>
+                <%=item.title %>
+            </h1>
+            <p>
+                <%=item.company%>
+            </p>
+            <p>
+                <%=item.location %>
+            </p>
+            <p>
+                <%=item.url %>
+            </p>
+
+            <form action="/addToList" id="addToList" method="post">
+                <input type="hidden" name="title" value=" <%=item.title %>">
+                <input type="hidden" name="company" value="<%=item.company%>">
+                <input type="hidden" name="location" value=" <%=item.location %>">
+                <input type="hidden" name="url" value="<%=item.url %>">
+                <input type="submit" value="Add to list">
+            </form>
+            <% })%>
+
+    </main>
+</body>
+
+</html>
